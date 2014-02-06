@@ -280,5 +280,15 @@ class Ticket
 		return false;
 		#var_dump($res);
 	}
+	public function addArtikel()
+	{
+		$a = new Artikel($this->id, $this->otrs);
+		return $a;
+	}
+	public function addMail()
+	{
+		$a = new Mail($this->id, $this->otrs);
+		return $a;
+	}
 
 }
